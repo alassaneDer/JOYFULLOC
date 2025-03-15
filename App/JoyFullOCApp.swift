@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct JoyFullOCApp: App {
+    @ObservedObject var viewmodel: HomeViewModel = HomeViewModel(dataProvider: ClothingDataProvider())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(homeViewmodel: viewmodel)
         }
     }
 }
