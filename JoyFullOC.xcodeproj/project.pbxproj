@@ -45,6 +45,7 @@
 		EDC1D36A2D855E1C009A2FC4 /* CoreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3692D855E1C009A2FC4 /* CoreLoader.swift */; };
 		EDC1D36C2D856296009A2FC4 /* ClothingDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D36B2D856296009A2FC4 /* ClothingDataProvider.swift */; };
 		EDC1D3732D85991B009A2FC4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3722D85991B009A2FC4 /* DetailView.swift */; };
+		EDEB60432D865C0400DDA48D /* DynamicTypeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEB60422D865C0400DDA48D /* DynamicTypeSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		EDC1D3692D855E1C009A2FC4 /* CoreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLoader.swift; sourceTree = "<group>"; };
 		EDC1D36B2D856296009A2FC4 /* ClothingDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingDataProvider.swift; sourceTree = "<group>"; };
 		EDC1D3722D85991B009A2FC4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EDEB60422D865C0400DDA48D /* DynamicTypeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				ED8477FB2D82AD7A0097A57D /* Color+Extensions.swift */,
 				ED137DC42D84056100B079FF /* OrientationManager.swift */,
+				EDEB60422D865C0400DDA48D /* DynamicTypeSize.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -210,9 +213,6 @@
 			children = (
 				EDC1D3712D859904009A2FC4 /* Details */,
 				EDC1D36F2D8598F7009A2FC4 /* Home */,
-				ED63DFA32D80F3650090A951 /* ItemView.swift */,
-				ED3EFF872D8330E10087F361 /* RowView.swift */,
-				ED137DC22D83F78F00B079FF /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +301,9 @@
 		EDC1D36F2D8598F7009A2FC4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ED137DC22D83F78F00B079FF /* HomeView.swift */,
+				ED3EFF872D8330E10087F361 /* RowView.swift */,
+				ED63DFA32D80F3650090A951 /* ItemView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				EDC1D34A2D855887009A2FC4 /* Mapper.swift in Sources */,
 				ED63DFC52D81183F0090A951 /* PreviewsDatas.swift in Sources */,
 				ED63DFA22D80F3650090A951 /* JoyFullOCApp.swift in Sources */,
+				EDEB60432D865C0400DDA48D /* DynamicTypeSize.swift in Sources */,
 				ED63DFC22D8107070090A951 /* PictureItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

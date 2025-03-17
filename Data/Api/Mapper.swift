@@ -55,14 +55,3 @@ enum Mapper {
         }
     }
 }
-/*
- enum Codingkeys: String, CodingKey {
-     case id
-     case picture
-     case name
-     case catefory
-     case likes
-     case price
-     case originalPrice = "original_price"
- }
- */

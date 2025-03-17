@@ -47,7 +47,7 @@ final class CoreDataClothing {
     
     private func cleanUpReferencesToPersistentStores() {
         context.perform { [weak self] in
-            guard let self = self else { return } // Éviter tout accès à un `self` déjà désalloué
+            guard let self = self else { return } /// Éviter tout accès à un `self` déjà désalloué
             let coordinator = self.container.persistentStoreCoordinator
             try? coordinator.persistentStores.forEach(coordinator.remove)
         }

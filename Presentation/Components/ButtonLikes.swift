@@ -18,18 +18,18 @@ struct ButtonLikes: View {
             Image(systemName: clothingItem.isLiked ? "heart.fill" : "heart")
             Text("\(clothingItem.likes)")
         }
+        .onTapGesture {
+            action(clothingItem)
+        }
         .padding(8)
         .background(Color.accessibleBackground(env))
         .clipShape(RoundedRectangle(cornerRadius: 20.0))
         .padding()
-        .onTapGesture {
-            action(clothingItem)
-        }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(clothingItem.likes) likes")
+        .accessibilityLabel("article avec \(clothingItem.likes) mentions j'aime")
         .accessibilityAddTraits(.isButton)
-        .accessibilityValue(clothingItem.isLiked ? "liked" : "not liked")
-        .accessibilityHint(clothingItem.isLiked ? "Double-tap to remove from likes." : "Double-tap to like this item.")
+        .accessibilityValue(clothingItem.isLiked ? "article favori" : "article non favori")
+        .accessibilityHint(clothingItem.isLiked ? "Tapper pour enlever l'article de vos favorits." : "Tapper pour mettre l'article en favorit")
     }
 }
 

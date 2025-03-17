@@ -20,11 +20,10 @@ struct PricesView: View {
             HStack(alignment: .firstTextBaseline) {
                 Text("\(clothingItem.name)")
                     .fontWeight(.bold).font(.headline)
-                    .minimumScaleFactor(0.8) /// Évite que le texte ne soit tronqu
+                    .minimumScaleFactor(0.6) /// Évite que le texte ne soit tronqu
                     .multilineTextAlignment(.leading)
                     .lineLimit(2)
-//                    .fixedSize(horizontal: false, vertical: true)
-
+                
                 
                 Spacer()
                 
@@ -34,7 +33,6 @@ struct PricesView: View {
                     Text("0.0")
                         .baselineOffset(2.0)
                 }
-                .padding(.horizontal)
                 
             }
             HStack(spacing: 0) {
@@ -45,7 +43,8 @@ struct PricesView: View {
                     .strikethrough()
             }
         }
-//        .padding(.horizontal)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(clothingItem.name), \(clothingItem.price, specifier: "%.0f")€")
         .foregroundStyle(isSelected ? Color.accessiblePrimaryAccent(env) : .primary)
     }
 }

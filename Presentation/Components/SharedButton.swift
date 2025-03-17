@@ -13,31 +13,34 @@ struct SharedButton: View {
     var body: some View {
         
         VStack(spacing: 10) {
-
-                Image("iconShare")
+            
+            Image("icons8-share-30")
+                .renderingMode(.template)
+                .padding()
+                .background(Color.gray.opacity(0.5))
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+        }
+        
+        if isSharing {
+            HStack(spacing: 15) {
+                Image(systemName: "f.circle.fill")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.blue.opacity(0.5))
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                
+                Image(systemName: "envelope.circle.fill")
+                    .font(.largeTitle)
                     .padding()
                     .background(Color.gray.opacity(0.5))
                     .foregroundColor(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
-            
-            if isSharing {
-                HStack(spacing: 15) {
-                    Image(systemName: "star.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.yellow)
-                    
-                    Image(systemName: "heart.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.red)
-                    
-                    Image(systemName: "bolt.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.orange)
-                }
-                .transition(.scale) // Effet d'animation sympa
-            }
+            .transition(.scale)
         }
+    }
 }
 
 #Preview {
