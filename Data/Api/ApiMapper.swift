@@ -1,8 +1,8 @@
 //
-//  Mapper.swift
-//  JoieFull
+//  ApiMapper.swift
+//  JoyFullOC
 //
-//  Created by Alassane Der on 11/02/2025.
+//  Created by Alassane Der on 17/03/2025.
 //
 
 import Foundation

@@ -42,10 +42,10 @@ extension Color {
 extension Color {
     static func accessiblePrimaryAccent(_ env: EnvironmentValues) -> Color {
         if env.accessibilityDifferentiateWithoutColor {
-            return .blue // Couleur neutre si différenciation activée
+            return .blue /// Couleur neutre si différenciation activée
         }
         if env.accessibilityInvertColors {
-            return Color(hex: "B24F4F") // Couleur inversée
+            return Color(hex: "B24F4F") /// Couleur inversée
         }
         if env.colorScheme == .dark {
             return env.colorSchemeContrast == .increased ? Color(hex: "266E75") : Color(hex: "54D6E7")
@@ -55,7 +55,7 @@ extension Color {
     
     static func accessibleBackground(_ env: EnvironmentValues) -> Color {
         if env.accessibilityReduceTransparency {
-            return .white // Fond solide pour éviter la transparence
+            return .white /// Fond solide pour éviter la transparence
         }
         if env.colorScheme == .dark {
             return env.colorSchemeContrast == .increased ? Color(hex: "101010") : Color(hex: "1C1C1E")

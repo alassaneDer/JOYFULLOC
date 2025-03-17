@@ -25,9 +25,9 @@
 		ED8478022D82C3320097A57D /* ButtonLikes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8478012D82C3320097A57D /* ButtonLikes.swift */; };
 		ED8478042D82C3530097A57D /* PricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8478032D82C3530097A57D /* PricesView.swift */; };
 		EDB6E3D92D82773800A0C3EE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB6E3D82D82773800A0C3EE /* HomeViewModel.swift */; };
-		EDC1D33A2D8557F2009A2FC4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3392D8557F2009A2FC4 /* HTTPClient.swift */; };
-		EDC1D3482D855880009A2FC4 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3472D855880009A2FC4 /* EndPoint.swift */; };
-		EDC1D34A2D855887009A2FC4 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3492D855887009A2FC4 /* Mapper.swift */; };
+		EDC016B02D88792300687275 /* ApiMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC016AF2D88792300687275 /* ApiMapper.swift */; };
+		EDC016B22D88793300687275 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC016B12D88793300687275 /* ApiEndPoint.swift */; };
+		EDC016B42D88794300687275 /* ApiHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC016B32D88794300687275 /* ApiHTTPClient.swift */; };
 		EDC1D34C2D85588B009A2FC4 /* ApiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D34B2D85588B009A2FC4 /* ApiLoader.swift */; };
 		EDC1D34E2D8558E9009A2FC4 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D34D2D8558E9009A2FC4 /* URLSessionHTTPClient.swift */; };
 		EDC1D3512D8559C1009A2FC4 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1D3502D8559C1009A2FC4 /* NSPersistentContainer.swift */; };
@@ -68,9 +68,9 @@
 		ED8478012D82C3320097A57D /* ButtonLikes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLikes.swift; sourceTree = "<group>"; };
 		ED8478032D82C3530097A57D /* PricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesView.swift; sourceTree = "<group>"; };
 		EDB6E3D82D82773800A0C3EE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		EDC1D3392D8557F2009A2FC4 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = "../../../../projet 12/JoieFull/JoieFull copie 4/JoieFull/Model/Network/HTTPClient.swift"; sourceTree = "<group>"; };
-		EDC1D3472D855880009A2FC4 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
-		EDC1D3492D855887009A2FC4 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		EDC016AF2D88792300687275 /* ApiMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMapper.swift; sourceTree = "<group>"; };
+		EDC016B12D88793300687275 /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		EDC016B32D88794300687275 /* ApiHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHTTPClient.swift; sourceTree = "<group>"; };
 		EDC1D34B2D85588B009A2FC4 /* ApiLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoader.swift; sourceTree = "<group>"; };
 		EDC1D34D2D8558E9009A2FC4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		EDC1D3502D8559C1009A2FC4 /* NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
@@ -229,10 +229,10 @@
 			isa = PBXGroup;
 			children = (
 				EDC1D34B2D85588B009A2FC4 /* ApiLoader.swift */,
-				EDC1D3492D855887009A2FC4 /* Mapper.swift */,
-				EDC1D3472D855880009A2FC4 /* EndPoint.swift */,
-				EDC1D3392D8557F2009A2FC4 /* HTTPClient.swift */,
 				EDC1D34D2D8558E9009A2FC4 /* URLSessionHTTPClient.swift */,
+				EDC016AF2D88792300687275 /* ApiMapper.swift */,
+				EDC016B12D88793300687275 /* ApiEndPoint.swift */,
+				EDC016B32D88794300687275 /* ApiHTTPClient.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -391,7 +391,6 @@
 				EDC1D3642D855DA7009A2FC4 /* PictureStoreProtocol.swift in Sources */,
 				EDC1D3732D85991B009A2FC4 /* DetailView.swift in Sources */,
 				ED137DC32D83F78F00B079FF /* HomeView.swift in Sources */,
-				EDC1D3482D855880009A2FC4 /* EndPoint.swift in Sources */,
 				EDC1D3512D8559C1009A2FC4 /* NSPersistentContainer.swift in Sources */,
 				EDC1D35C2D855B6D009A2FC4 /* JoyFullStore.xcdatamodeld in Sources */,
 				EDC1D3682D855DEB009A2FC4 /* CoreDataClothing+PictureStoreProtocol.swift in Sources */,
@@ -399,6 +398,7 @@
 				ED63DFC02D8103470090A951 /* ClothingItem.swift in Sources */,
 				EDC1D3662D855DBE009A2FC4 /* CoreDataClothing+ClothingStoreProtocol.swift in Sources */,
 				ED8478002D82B87F0097A57D /* ColorTesteurAccessibility.swift in Sources */,
+				EDC016B02D88792300687275 /* ApiMapper.swift in Sources */,
 				EDB6E3D92D82773800A0C3EE /* HomeViewModel.swift in Sources */,
 				EDC1D3602D855D51009A2FC4 /* ManagedClothing+Extensions.swift in Sources */,
 				EDC1D36C2D856296009A2FC4 /* ClothingDataProvider.swift in Sources */,
@@ -408,17 +408,17 @@
 				EDC1D34C2D85588B009A2FC4 /* ApiLoader.swift in Sources */,
 				EDC1D3552D855A53009A2FC4 /* CoreClothing.swift in Sources */,
 				EDC1D35E2D855D20009A2FC4 /* ManagedClothing.swift in Sources */,
+				EDC016B42D88794300687275 /* ApiHTTPClient.swift in Sources */,
 				ED3EFF882D8330E10087F361 /* RowView.swift in Sources */,
 				EDC1D34E2D8558E9009A2FC4 /* URLSessionHTTPClient.swift in Sources */,
 				EDC1D36A2D855E1C009A2FC4 /* CoreLoader.swift in Sources */,
+				EDC016B22D88793300687275 /* ApiEndPoint.swift in Sources */,
 				ED137DC52D84056100B079FF /* OrientationManager.swift in Sources */,
 				EDC1D3572D855A82009A2FC4 /* ManagedPicture.swift in Sources */,
-				EDC1D33A2D8557F2009A2FC4 /* HTTPClient.swift in Sources */,
 				EDC1D3592D855AE7009A2FC4 /* ManagedPicture+Extensions.swift in Sources */,
 				ED137DC72D8406CD00B079FF /* TestDeviceOrientationView.swift in Sources */,
 				ED8478022D82C3320097A57D /* ButtonLikes.swift in Sources */,
 				EDC1D3622D855D8D009A2FC4 /* ClothingStoreProtocol.swift in Sources */,
-				EDC1D34A2D855887009A2FC4 /* Mapper.swift in Sources */,
 				ED63DFC52D81183F0090A951 /* PreviewsDatas.swift in Sources */,
 				ED63DFA22D80F3650090A951 /* JoyFullOCApp.swift in Sources */,
 				EDEB60432D865C0400DDA48D /* DynamicTypeSize.swift in Sources */,
